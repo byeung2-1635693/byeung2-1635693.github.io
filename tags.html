@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brandon's Brilliant Website</title>
+	</head>
+	<body>
+		<h1>Brandon Yeung</h1>
+		<h2>About Me</h2>
+		<p>I was born in Mountain View, California, a city near San Jose, California.</p>
+		<p>I am a huge sports fan, especially when it comes to football (49ers), baskeball (Lakers), and hockey (Sharks).</p>
+		<h2>My Favorite Sites</h2>
+		<ul>
+			<li>
+				<a href="https://www.facebook.com">Facebook</a>
+			</li>
+			<li>
+				<a href="https://www.twitch.tv">Twitch</a>
+			</li>
+			<li>
+				<a href="https://www.netflix.com">Netflix</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com">Youtube</a>
+			</li>
+		</ul>
+		<h2>My Favorite Pictures</h2>
+		<a href="http://www.atlanticbb.net/news/read/category/nfl/article/the_associated_press-jimmy_time_garoppolo_leads_49ers_to_third_straight-ap"> 
+			<img src="https://da4pli3l5vc0d.cloudfront.net/a0/66/a06692f1f1809ec1ac61a2cdd39a4931e3381719/h=300/?app=portal&sig=51bb5d0af651d7aec4a10085af72a45b1861319cd3f8649845ba7095250d4d73" title="Jimmy Garoppolo" style=width:423px;height:300px;margin:5px">
+		</a>
+		<a href="https://www.lonelyplanet.com/usa/san-francisco/attractions/golden-gate-bridge/a/poi-sig/383417/361858">
+			<img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/a96e988d975f9697e5343f5cd1cb8aad-golden-gate-bridge.jpg?auto=enhance&w=770&h=430&fit=crop title="Golden Gate Bridge" style=width:470px;height:300px;margin:5px">
+		</a>
+		<h2>My Dream Vacation to Visit</h2>
+		
+		<div id="map" style="width:400px;height:400px;"></div>
+
+		<script>
+		function myMap() {
+			var mapOptions = {
+				center: new google.maps.LatLng(51.5, -0.12),
+				zoom: 10,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	</body>
+</html>
